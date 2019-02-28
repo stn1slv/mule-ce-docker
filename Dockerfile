@@ -38,5 +38,6 @@ RUN cd mule \
     && rm ${MULE_ZIP_NAME}.zip
 
 RUN ln -s /mule/${MULE_ZIP_NAME}/apps /mule/apps
+RUN ln -s /mule/${MULE_ZIP_NAME}/domains /mule/domains
 WORKDIR /mule/${MULE_ZIP_NAME}/bin
 CMD [ "./mule" ]
